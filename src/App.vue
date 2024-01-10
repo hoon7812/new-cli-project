@@ -4,7 +4,13 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
+  <button @click="count++">Count is: {{ count }}</button>
 </template>
+
+<script setup>
+import { ref } from "vue";
+const count = ref(2);
+</script>
 
 <style>
 #app {
