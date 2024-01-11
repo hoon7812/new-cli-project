@@ -1,10 +1,16 @@
 <template>
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <router-link to="/third">Third</router-link>
   </nav>
   <router-view />
 </template>
+
+<script setup>
+import "./scss/main.css";
+</script>
 
 <style>
 #app {
