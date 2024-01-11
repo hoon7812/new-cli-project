@@ -1,15 +1,15 @@
 <template>
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <router-link to="/third">Third</router-link>
   </nav>
   <router-view />
-  <button @click="count++">Count is: {{ count }}</button>
 </template>
 
 <script setup>
-import { ref } from "vue";
-const count = ref(2);
+import "./scss/main.css";
 </script>
 
 <style>
